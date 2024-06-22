@@ -1,7 +1,7 @@
 
 pipeline{
     agent any
-    parameters([
+    parameters[
        string(
          name: 'Polarion_ID',
          defaultValue: '', 
@@ -12,7 +12,7 @@ pipeline{
          defaultValue: '', 
          description: 'Which target branch do you want to building?'
        )
-    ])
+    ]
     
     stages{
         stage('exe gen'){
