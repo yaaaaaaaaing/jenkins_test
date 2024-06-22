@@ -1,3 +1,4 @@
+def python = '.\\virtual_py\\Scripts\\python.exe'
 
 pipeline{
     agent any
@@ -17,7 +18,7 @@ pipeline{
     stages{
         stage('exe gen'){
             steps{
-                    bat 'pyinstaller -F python_code.py'
+                    bat 'python python_code.py'
             }
             
     }
