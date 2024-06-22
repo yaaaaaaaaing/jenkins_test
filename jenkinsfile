@@ -1,7 +1,6 @@
 
 pipeline{
-properties([
-
+    agent any
     parameters([
        string(
          name: 'Polarion_ID',
@@ -14,7 +13,7 @@ properties([
          description: 'Which target branch do you want to building?'
        )
     ])
-])
+    
     stages{
         stage('exe gen'){
             steps{
