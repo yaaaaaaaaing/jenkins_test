@@ -6,7 +6,7 @@ pipeline{
          name: 'Polarion_ID',
          defaultValue: '', 
          description: 'Which Polarion ID do you want to building?'
-       ),
+       )
        string(
          name: 'Target_branch',
          defaultValue: '', 
