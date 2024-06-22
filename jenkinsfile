@@ -1,5 +1,5 @@
-def python = '.\\virtual_py\\Scripts\\python.exe'
 
+pipeline{
 properties([
 
     parameters([
@@ -15,8 +15,6 @@ properties([
        )
     ])
 ])
-
-pipeline{
     stages{
         stage('exe gen'){
             steps{
