@@ -1,0 +1,28 @@
+def python = '.\\virtual_py\\Scripts\\python.exe'
+
+properties([
+
+    parameters([
+       string(
+         name: 'Polarion_ID',
+         defaultValue: '', 
+         description: 'Which Polarion ID do you want to building?'
+       ),
+       string(
+         name: 'Target_branch',
+         defaultValue: '', 
+         description: 'Which target branch do you want to building?'
+       )
+    ])
+])
+
+pipeline{
+    stages{
+        stage('exe gen'){
+            steps{
+                    bat 'pyinstaller -F python_code.py'
+            }
+            
+    }
+}
+}
